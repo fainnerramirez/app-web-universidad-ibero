@@ -1,5 +1,9 @@
 :root {
     --color-primary: rgba(80, 65, 40, 0.8);
+    --color-primary-dark: rgb(80, 65, 40);
+    --font-size-medium: 24px;
+    --font-size-forte: 48px;
+    --font-size-light: 20px;
   }
   
   .navbar {
@@ -10,8 +14,36 @@
     background-image: url("./assets/imagen1.webp");
     background-position: center;
     background-size: cover;
-    height: 500px;
+    height: 100vh;
     width: 100%;
     opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-app, .description-app {
+    color: #FFFFFF;
+    text-align: center;
   }
   
+  .title-app {
+    font-size: 72px;
+    text-shadow: 2px 2px 3px #FFFFFF;
+  }
+
+  .description-app {
+    font-size: 30px;
+    width: 50%;
+  }
+
+  .btn-reservar {
+    background-color: var(--color-primary-dark);
+    color: #FFFFFF;
+    border-radius: 32px;
+    border: none;
+    padding: 12px 24px;
+    font-size: var(--font-size-light);
+    margin-top: 40px;
+  }

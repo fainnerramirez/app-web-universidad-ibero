@@ -1,4 +1,5 @@
 const buttonIniciarSesion = document.getElementById("signUser");
+const buttonReservation = document.getElementById("btnReservation");
 
 buttonIniciarSesion.addEventListener("click", () => {
   const div = document.createElement("div");
@@ -10,4 +11,8 @@ buttonIniciarSesion.addEventListener("click", () => {
   setTimeout(() => {
     div.remove();
   }, 3000);
+});
+
+buttonReservation.addEventListener("click", () => {
+  alert("Reservación hecha");
 });
