@@ -1,0 +1,17 @@
+:root {
+    --color-primary: rgba(80, 65, 40, 0.8);
+  }
+  
+  .navbar {
+    background-color: var(--color-primary) !important;
+  }
+  
+  .home-app {
+    background-image: url("./assets/imagen1.webp");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    opacity: 0.8;
+  }
+  
