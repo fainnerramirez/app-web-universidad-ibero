@@ -16,3 +16,39 @@ buttonIniciarSesion.addEventListener("click", () => {
 buttonReservation.addEventListener("click", () => {
   alert("Reservación hecha");
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Función para actualizar el contador
+  function actualizarContador(tipo, operacion) {
+      let contador = document.getElementById(tipo);
+      let valor = parseInt(contador.textContent);
+
+      if (operacion === "sumar") {
+          valor++;
+      } else if (operacion === "restar") {
+          if ((tipo === "adultos" || tipo === "habitaciones") && valor > 1) {
+              valor--;
+          } else if (tipo === "ninos" && valor > 0) {
+              valor--;
+          }
+      }
+
+      contador.textContent = valor;
+  }
+
+  // Evento para restar
+  document.querySelectorAll(".menos").forEach(boton => {
+      boton.addEventListener("click", function () {
+          let tipo = this.getAttribute("data-tipo");
+          actualizarContador(tipo, "restar");
+      });
+  });
+
+  // Evento para sumar
+  document.querySelectorAll(".mas").forEach(boton => {
+      boton.addEventListener("click", function () {
+          let tipo = this.getAttribute("data-tipo");
+          actualizarContador(tipo, "sumar");
+      });
+  });
+});

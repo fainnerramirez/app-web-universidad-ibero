@@ -69,6 +69,54 @@
       <button id="btnReservation" class="btn-reservar">Reservar</button>
     </div>
   </div>
+  <!-- esta es la segunda pagina-->
+  <div class="reserva-app">
+    <h1 >ALOJAMIENTOS</h1>
+    <p >Encuentra los alojamientos que van más contigo</p>
+  <!-- formulario-->
+    <div class="formulario">
+      <label for="destino">Destino</label>
+      <input type="text" id="destino" placeholder="Ingresa tu destino">
+
+      <div class="fechas">
+        <label for="checkin">Check-in</label>
+        <input type="date" id="checkin">
+        <label for="checkout">Check-out</label>
+        <input type="date" id="checkout">
+      </div>
+
+      <div class="contador">
+        <label>Adultos</label>
+        <button class="menos" data-tipo="adultos">-</button>
+        <span id="adultos">1</span>
+        <button class="mas" data-tipo="adultos">+</button>
+      </div>
+
+      <div class="contador">
+        <label>Niños</label>
+        <button class="menos" data-tipo="ninos">-</button>
+        <span id="ninos">0</span>
+        <button class="mas" data-tipo="ninos">+</button>
+      </div>
+
+      <div class="contador">
+        <label>Habitaciones</label>
+        <button class="menos" data-tipo="habitaciones">-</button>
+        <span id="habitaciones">1</span>
+        <button class="mas" data-tipo="habitaciones">+</button>
+      </div>
+
+      <button id="buscar">BUSCAR</button>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
 
   <script src="./main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
