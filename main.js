@@ -18,7 +18,6 @@ buttonReservation.addEventListener("click", () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Función para actualizar el contador
   function actualizarContador(tipo, operacion) {
       let contador = document.getElementById(tipo);
       let valor = parseInt(contador.textContent);
@@ -32,19 +31,14 @@ document.addEventListener("DOMContentLoaded", function () {
               valor--;
           }
       }
-
       contador.textContent = valor;
   }
-
-  // Evento para restar
   document.querySelectorAll(".menos").forEach(boton => {
       boton.addEventListener("click", function () {
           let tipo = this.getAttribute("data-tipo");
           actualizarContador(tipo, "restar");
       });
   });
-
-  // Evento para sumar
   document.querySelectorAll(".mas").forEach(boton => {
       boton.addEventListener("click", function () {
           let tipo = this.getAttribute("data-tipo");
