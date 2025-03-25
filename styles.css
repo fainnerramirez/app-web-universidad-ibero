@@ -1,49 +1,231 @@
 :root {
-    --color-primary: rgba(80, 65, 40, 0.8);
-    --color-primary-dark: rgb(80, 65, 40);
-    --font-size-medium: 24px;
-    --font-size-forte: 48px;
-    --font-size-light: 20px;
-  }
-  
-  .navbar {
-    background-color: var(--color-primary) !important;
-  }
-  
-  .home-app {
-    background-image: url("./assets/imagen1.webp");
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    opacity: 0.8;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  --color-primary: rgba(80, 65, 40, 0.8);
+  --color-primary-dark: rgb(80, 65, 40);
+  --font-size-medium: 24px;
+  --font-size-forte: 48px;
+  --font-size-light: 20px;
+}
 
-  .title-app, .description-app {
-    color: #FFFFFF;
-    text-align: center;
-  }
-  
-  .title-app {
-    font-size: 72px;
-    text-shadow: 2px 2px 3px #FFFFFF;
-  }
+.navbar {
+  background-color: var(--color-primary) !important;
+}
 
-  .description-app {
-    font-size: 30px;
-    width: 50%;
-  }
+.home-app {
+  background-image: url("./assets/imagen1.webp");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .btn-reservar {
-    background-color: var(--color-primary-dark);
-    color: #FFFFFF;
-    border-radius: 32px;
-    border: none;
-    padding: 12px 24px;
-    font-size: var(--font-size-light);
-    margin-top: 40px;
-  }
+.overlay {
+  position: relative;
+  width: 100%;
+}
+
+.overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.overlay > * {
+  position: relative;
+  z-index: 2;
+}
+
+
+.overlay-yellow {
+  position: relative;
+  width: 100%;
+}
+
+.overlay-yellow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(229, 232, 38, 0.1);
+  z-index: 1;
+}
+
+.overlay-yellow > * {
+  position: relative;
+  z-index: 2;
+}
+
+.title-app,
+.description-app {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.title-app {
+  font-size: 72px;
+  text-shadow: 2px 2px 3px #FFFFFF;
+}
+
+.description-app {
+  font-size: 30px;
+  width: 50%;
+}
+
+.btn-reservar {
+  background-color: var(--color-primary-dark);
+  color: #FFFFFF;
+  border-radius: 32px;
+  border: none;
+  padding: 12px 24px;
+  font-size: var(--font-size-light);
+  margin-top: 40px;
+}
+
+/* Estilos de alojamientos */
+
+.section__alojamientos {
+  padding: 20px;
+  background-image: url("./assets/imagen2.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+
+.section__alojamientos__formulario {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #6e6256;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  margin: auto;
+}
+
+.section__alojamientos__formulario__destino {
+  width: 100%;
+}
+
+.section__alojamientos__formulario__calendars {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+}
+
+.section__alojamientos__formulario__calendars>input {
+  width: 50%;
+}
+
+input {
+  padding: 20px;
+  border-radius: 32px;
+  background-color: #FFFFFF;
+  color: #1B1B1B;
+}
+
+.section__alojamientos__formulario__passangers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.input-rounded {
+  padding: 10px;
+  background-color: #FFFFFF;
+  color: #1B1B1B;
+  border-radius: 32px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.button__action {
+  border-radius: 50%;
+  border: 5px solid #6e6256;
+  color: #6e6256;
+  font-weight: bolder;
+  font-size: 25px;
+  padding: 0px 10px;
+}
+
+.input-rounded>.text {
+  font-size: 24px;
+}
+
+.buttons__passenger {
+  display: flex;
+  gap: 5px;
+  align-items: end;
+}
+
+.button__value {
+  border-bottom: 2px solid #6e6256;
+  width: 30px;
+}
+
+.search__destination__button {
+  padding: 12px 24px;
+  background-color: #FFFFFF;
+  color: #6e6256;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.section__alojamientos__title {
+  color: #FFFFFF;
+  width: 50%;
+  margin: auto;
+}
+
+.section__alojamientos__description {
+  color: #FFFFFF;
+  width: 50%;
+  margin: auto;
+}
+
+
+/* seccion de hoteles en colombia */
+
+.button__hotel {
+  background-color: #6e6256;
+  color: #FFFFFF;
+  border: none;
+}
+
+.section__colombia__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.section__colombia {
+  width: 80%;
+  margin: auto;
+}
+
+.section__colombia>h1 {
+  margin: 40px 10px;
+  color: #202020;
+}
+
+
+.card {
+  flex: 1 1 calc(33.33% - 100px); /* Cada elemento ocupará el 33.33% del ancho del contenedor, restando el espacio del gap */
+  box-sizing: border-box; /* Asegura que el padding y el border no afecten el ancho total del item */
+}
