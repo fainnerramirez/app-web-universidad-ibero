@@ -2,6 +2,7 @@
   --color-primary: rgba(80, 65, 40, 0.8);
   --color-primary-dark: rgb(80, 65, 40);
   --color-yellow-ladrillo: rgba(228, 177, 103);
+  --color-grey: rgb(248, 236, 220);
   --font-size-medium: 24px;
   --font-size-forte: 48px;
   --font-size-light: 20px;
@@ -228,10 +229,67 @@ input {
 
 .section__colombia>h1 {
   padding: 20px;
-  color: #202020;
+  color: #000000;
 }
 
 .card {
   flex: 1 1 calc(33.33% - 100px); 
   box-sizing: border-box;
+}
+.section__sudamerica__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  width: 80%;
+  margin: auto;
+}
+.section__sudamerica {
+  width: 100%;
+  margin: auto;
+  background-color: var(--color-primary-dark);
+}
+
+.section__sudamerica>h1 {
+  padding: 20px;
+  color: #ffffff;
+}
+.section__eeuu__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  width: 80%;
+  margin: auto;
+}
+.section__eeuu {
+  width: 100%;
+  margin: auto;
+  background-color: var(--color-grey);
+}
+
+.section__eeuu>h1 {
+  padding: 20px;
+  color: #000000;
+}
+.section__final__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.section__final{
+  width: 100%;
+  margin: auto;
+  background-color: var(--color-primary);
+}
+.img-final{
+  width: 50%;
+  margin: auto;
+}
+.info{
+  padding: 20px;
+  color: #ffffff; 
 }
