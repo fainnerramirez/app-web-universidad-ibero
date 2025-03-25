@@ -1,6 +1,7 @@
 :root {
   --color-primary: rgba(80, 65, 40, 0.8);
   --color-primary-dark: rgb(80, 65, 40);
+  --color-yellow-ladrillo: rgba(228, 177, 103);
   --font-size-medium: 24px;
   --font-size-forte: 48px;
   --font-size-light: 20px;
@@ -98,7 +99,6 @@
   background-image: url("./assets/imagen2.jpg");
   background-position: center;
   background-size: cover;
-  height: 600px;
 }
 
 .section__alojamientos__formulario {
@@ -175,6 +175,7 @@ input {
 .button__value {
   border-bottom: 2px solid #6e6256;
   width: 30px;
+  text-align: center;
 }
 
 .search__destination__button {
@@ -197,7 +198,6 @@ input {
   margin: auto;
 }
 
-
 /* seccion de hoteles en colombia */
 
 .button__hotel {
@@ -206,26 +206,32 @@ input {
   border: none;
 }
 
+.button__hotel:hover {
+  background-color: rgba(110, 98, 86, 0.5);
+}
+
 .section__colombia__container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 100px;
-}
-
-.section__colombia {
   width: 80%;
   margin: auto;
 }
 
+.section__colombia {
+  width: 100%;
+  margin: auto;
+  background-color: var(--color-yellow-ladrillo);
+}
+
 .section__colombia>h1 {
-  margin: 40px 10px;
+  padding: 20px;
   color: #202020;
 }
 
-
 .card {
-  flex: 1 1 calc(33.33% - 100px); /* Cada elemento ocupará el 33.33% del ancho del contenedor, restando el espacio del gap */
-  box-sizing: border-box; /* Asegura que el padding y el border no afecten el ancho total del item */
+  flex: 1 1 calc(33.33% - 100px); 
+  box-sizing: border-box;
 }

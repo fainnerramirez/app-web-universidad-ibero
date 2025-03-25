@@ -72,8 +72,8 @@
 
   <!-- Section Alojamientos -->
   <div class="section__alojamientos overlay-yellow">
-    <h1 class="section__alojamientos__title">Alojamientos</h1>
-    <p class="section__alojamientos__description">Encuentra los alojamientos que van mas contigo</p>
+    <h1 class="section__alojamientos__title fs-1">Alojamientos</h1>
+    <p class="section__alojamientos__description fs-4">Encuentra los alojamientos que van mas contigo</p>
     <div class="section__alojamientos__formulario">
       <input type="text" class="section__alojamientos__formulario__destino" placeholder="destino">
       <div class="section__alojamientos__formulario__calendars">
@@ -84,28 +84,29 @@
         <div class="adults input-rounded">
           <p class="text">Adultos</p>
           <div class="buttons__passenger">
-            <button class="button__increment button__action">+</button>
-            <p class="button__value"></p>
-            <button class="button__decrement button__action">-</button>
+            <button class="button__increment button__action" data-target="adults">+</button>
+            <p class="button__value" id="adults-count">0</p>
+            <button class="button__decrement button__action" data-target="adults">-</button>
           </div>
         </div>
         <div class="childrens input-rounded">
           <p class="text">Niños</p>
           <div class="buttons__passenger">
-            <button class="button__increment button__action">+</button>
-            <p class="button__value"></p>
-            <button class="button__decrement button__action">-</button>
+            <button class="button__increment button__action" data-target="children">+</button>
+            <p class="button__value" id="children-count">0</p>
+            <button class="button__decrement button__action" data-target="children">-</button>
           </div>
         </div>
         <div class="rooms input-rounded">
           <p class="text">Habitaciones</p>
           <div class="buttons__passenger">
-            <button class="button__increment button__action">+</button>
-            <p class="button__value"></p>
-            <button class="button__decrement button__action">-</button>
+            <button class="button__increment button__action" data-target="rooms">+</button>
+            <p class="button__value" id="rooms-count">0</p>
+            <button class="button__decrement button__action" data-target="rooms">-</button>
           </div>
         </div>
       </div>
+      
       <div class="search__destination">
         <button class="search__destination__button">Buscar</button>
       </div>
@@ -117,45 +118,45 @@
     <h1>Reserva tu hotel en colombia</h1>
     <div class="section__colombia__container">
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/3075974/pexels-photo-3075974.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="...">
+        <img src="./assets/medellin.webp" class="card-img-top" alt="Medellin">
         <div class="card-body">
           <h5 class="card-title">Medellín</h5>
-          <a href="#" class="btn btn-primary w-100 button__hotel">ver hoteles</a>
+          <a href="#" class="btn btn-primary w-100 button__hotel p-3 fs-5">ver hoteles</a>
         </div>
       </div>
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/3075974/pexels-photo-3075974.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="...">
+        <img src="./assets/bogota.webp" class="card-img-top" alt="Bogota">
         <div class="card-body">
           <h5 class="card-title">Bogotá</h5>
-          <a href="#" class="btn btn-primary w-100 button__hotel">ver hoteles</a>
+          <a href="#" class="btn btn-primary w-100 button__hotel p-3 fs-5">ver hoteles</a>
         </div>
       </div>
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/3075974/pexels-photo-3075974.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="...">
+        <img src="./assets/cali.webp" class="card-img-top" alt="Cali">
         <div class="card-body">
           <h5 class="card-title">Cali</h5>
-          <a href="#" class="btn btn-primary w-100 button__hotel">ver hoteles</a>
+          <a href="#" class="btn btn-primary w-100 button__hotel p-3 fs-5">ver hoteles</a>
         </div>
       </div>
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/3075974/pexels-photo-3075974.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="...">
+        <img src="./assets/cartagena.webp" class="card-img-top" alt="Cartagena">
         <div class="card-body">
           <h5 class="card-title">Cartagena</h5>
-          <a href="#" class="btn btn-primary w-100 button__hotel">ver hoteles</a>
+          <a href="#" class="btn btn-primary w-100 button__hotel p-3 fs-5">ver hoteles</a>
         </div>
       </div>
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/3075974/pexels-photo-3075974.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="...">
+        <img src="./assets/sanandres.webp" class="card-img-top" alt="San Andres">
         <div class="card-body">
           <h5 class="card-title">San Andres</h5>
-          <a href="#" class="btn btn-primary w-100 button__hotel">ver hoteles</a>
+          <a href="#" class="btn btn-primary w-100 button__hotel p-3 fs-5">ver hoteles</a>
         </div>
       </div>
       <div class="card" style="width: 18rem;">
-        <img src="https://images.pexels.com/photos/3075974/pexels-photo-3075974.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="...">
+        <img src="./assets/santamarta.webp" class="card-img-top" alt="Santa Marta">
         <div class="card-body">
           <h5 class="card-title">Santa Marta</h5>
-          <a href="#" class="btn btn-primary w-100 button__hotel">ver hoteles</a>
+          <a href="#" class="btn btn-primary w-100 p-3 button__hotel fs-5">ver hoteles</a>
         </div>
       </div>
     </div>
