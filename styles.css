@@ -236,6 +236,8 @@ input {
   flex: 1 1 calc(33.33% - 100px); 
   box-sizing: border-box;
 }
+/* seccion de hoteles en sudamerica */
+
 .section__sudamerica__container {
   display: flex;
   justify-content: center;
@@ -255,6 +257,7 @@ input {
   padding: 20px;
   color: #ffffff;
 }
+/* seccion de hoteles en eeuu */
 .section__eeuu__container {
   display: flex;
   justify-content: center;
@@ -274,7 +277,52 @@ input {
   padding: 20px;
   color: #000000;
 }
-.section__final__container {
+/* blog */
+.section__blog__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 800px;
+}
+.section__blog{
+  background-color: var(--color-yellow-ladrillo);
+}
+.btn-blog {
+  background-color: var(--color-primary-dark);
+  color: #FFFFFF;
+  border-radius: 32px;
+  border: none;
+  padding: 12px 24px;
+  font-size: var(--font-size-medium);
+  margin-top: 40px;
+}
+
+/* grupo */
+.section__grup__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  width: 80%;
+  margin: auto;
+}
+.section__grup {
+  width: 100%;
+  margin: auto;
+  background-color: var(--color-grey);
+}
+
+.section__grup>h1 {
+  padding: 20px;
+  color: #000000;
+}
+/* final */
+
+.section__final__container{
   display: flex;
   justify-content: center;
   align-items: center;
