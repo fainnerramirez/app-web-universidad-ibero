@@ -2,6 +2,7 @@ const buttonIniciarSesion = document.getElementById("signUser");
 const buttonReservation = document.getElementById("btnReservation");
 const incrementButtons = document.querySelectorAll('.button__increment');
 const decrementButtons = document.querySelectorAll('.button__decrement');
+// const buttonsHotels = document.querySelectorAll(".button__hotel");
 
 buttonIniciarSesion.addEventListener("click", () => {
   const div = document.createElement("div");
@@ -48,3 +49,28 @@ decrementButtons.forEach(button => {
     updateCount(target, false);
   });
 });
+
+// buttonsHotels.forEach(hotel => {
+//   hotel.addEventListener("click", (event) => {
+//     const target = hotel.getAttribute("data-ciudad");
+//     createModalHotel(target);
+//   });
+// });
+
+// const createModalHotel = (ciudad) => {
+
+// //   <!-- Button trigger modal -->
+// // <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+// //   Launch demo modal
+// // </button>
+
+// const button = document.createElement("button");
+// button.setAttribute("type", "button");
+// button.setAttribute("data-toggle", "modal");
+// button.setAttribute("data-target", `${ciudad}`);
+// button.classList.add("btn btn-primary");
+
+//   const modal = `
+
+//   `;
+// }
